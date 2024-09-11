@@ -1,0 +1,283 @@
+CSS CODE
+/* global setting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.lg {
+  font-size: 1.5rem;
+}
+
+/* button style */
+.btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  background: #e50914;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.btn-lg {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 0;
+  background: #e50914;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.btn-lg:hover {
+  background: #fd1c27;
+}
+
+/* inner container title and text style */
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  line-height: 1.25;
+}
+.inner-title {
+  font-size: 1.8rem;
+  width: 90%;
+}
+
+.inner-title h1 {
+  margin-bottom: 1rem;
+}
+
+.inner-text {
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+/* email form */
+
+.email-form {
+  margin: 1rem;
+}
+.email-form .get-started {
+  padding-top: 1rem;
+  display: flex;
+  height: 80%;
+}
+
+.email-form .get-started > input {
+  border-radius: 2px 0 0 2px;
+  border: 3px solid #333;
+  padding-left: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  flex: 1;
+}
+
+.email-form .btn-lg {
+  border-radius: 0 2px 2px 0;
+}
+
+/* header */
+.header {
+  height: 110vh;
+  position: relative;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/8ef88e03-6f89-4c75-ae51-f8da7d252358/6ac07e5f-07ca-4543-8540-f22edce8bb02/TW-en-20210208-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+    no-repeat center center/cover;
+  box-shadow: inset 0 50px 300px #000, inset 0 -50px 300px #000;
+  border-bottom: 10px #333 solid;
+}
+
+/* brightness and vignette effect*/
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.4;
+}
+
+/* logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.logo > img {
+  width: 150px;
+}
+
+/* header text , input form and button*/
+
+.header .inner-container {
+  margin-top: 10rem;
+}
+
+.header .inner-title {
+  width: 50%;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+}
+
+.header .inner-text {
+  width: 50%;
+  text-align: center;
+}
+
+/* showcase 1 */
+
+.showcase {
+  border-bottom: 10px solid #333;
+  padding: 2rem 0;
+}
+.showcase-container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+}
+
+.showcase-img {
+  position: relative;
+  z-index: 1;
+}
+
+.showcase-animation {
+  position: absolute;
+  left: 75px;
+  top: 95px;
+  z-index: -1;
+}
+
+/* showcase 2*/
+
+.case2 {
+  width: 90%;
+}
+
+.showcase-container.case2 > .showcase-img {
+  margin: 1.2rem 0;
+}
+
+.downloading {
+  background: #000;
+  width: 60%;
+  height: 125px;
+  position: absolute;
+  top: 335px;
+  left: 125px;
+  border: 5px solid #333;
+  border-radius: 10px;
+  padding: 0.7rem;
+  display: flex;
+}
+
+.downloading > img {
+  height: 100%;
+}
+
+.download-text {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.download-text > p {
+  color: #0066e3;
+}
+
+/* showcase 3*/
+
+.case3 .showcase-animation {
+  width: 395px;
+  height: 225px;
+  top: 50px;
+  left: 120px;
+}
+
+/* faq list */
+.faq {
+  border-bottom: 10px solid #333;
+}
+
+.faq .inner-container {
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+
+.faq .inner-title {
+  text-align: center;
+}
+.faq h1 {
+  margin-bottom: 5rem;
+}
+
+.faq h2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.faq ul {
+  width: 60%;
+  margin: auto;
+}
+
+.faq li {
+  border-bottom: 5px solid #000;
+  background: #333;
+  cursor: pointer;
+}
+
+.faq li.show i {
+  transform: rotate(45deg);
+}
+
+.faq li > p {
+  padding: 1rem 0;
+  border-top: 1px solid #000;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  position: absolute;
+  max-height: 0;
+  visibility: hidden;
+  transition: max-height 0.1s ease-in;
+}
+
+.faq .inner-text {
+  margin-top: 2rem;
+}
+
+/* show list item */
+.faq li.show p {
+  max-height: 700px;
+  position: relative;
+  visibility: visib
